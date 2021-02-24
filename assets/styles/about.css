@@ -1,0 +1,11 @@
+.head {
+  text-align: center;
+  font-size: xx-large;
+  margin: 0 10%;
+}
+
+body {
+  background-image: url("../images/wp2483011.jpg");
+  background-size: cover;
+  color: whitesmoke;
+}

@@ -1,0 +1,51 @@
+.grid-con {
+  width: 50%;
+  display: grid;
+  grid-gap: 10px;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10%;
+}
+
+.image {
+  opacity: 1;
+  width: 50%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  padding: 10px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cards:hover .image {
+  opacity: 0.3;
+}
+
+.cards:hover .middle {
+  opacity: 1;
+}
+
+/* .cards:hover {
+  opacity: 0.3;
+} */
+
+/* .container:hover {
+  opacity: 1;
+} */
+
+.text {
+  background-color: red;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
