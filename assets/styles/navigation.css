@@ -1,39 +1,52 @@
 * {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  background-color: rgba(42, 157, 143, 0.6);
+  padding: 10px;
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 90px;
-  font-size: 40px;
-  background-color: black;
-}
-
-.nav-link a:hover {
-  color: gray;
+  height: 7vw;
 }
 
 .nav-links {
   display: flex;
   list-style-type: none;
-  transition: all 0.3s linear;
 }
 
-.nav-kink a {
+.nav-link a {
   text-decoration: none;
-  color: brown;
-  padding: 8px;
+  color: white;
+  padding: 10px;
   transition: color 0.3s ease-in-out;
 }
 
-.logo {
-  height: 100px;
+.nav-link a:hover {
+  color: #2a9d8f;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 535px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    width: 0;
+    overflow: hidden;
+  }
 }
