@@ -12,6 +12,10 @@
   justify-content: center;
   align-items: center;
   animation: backgroundChange 10s linear infinite;
+  /* background: linear-gradient(
+    rgb(255, 255, 255, 0.1),
+    (rgb(255, 255, 255, 0.5))
+  ); */
 }
 
 @keyframes backgroundChange {
@@ -27,4 +31,9 @@
   99% {
     background-image: url("../images/wp2483011.jpg");
   }
+}
+
+.landing h1 {
+  color: rgba(42, 157, 143, 0.6);
+  text-shadow: 2px 2px black;
 }
