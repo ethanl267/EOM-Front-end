@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-height: 40vh;
+  object-fit: cover;
+  object-position: 10% 40%;
+}
+
+.contain {
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+  font-size: 23px;
+  padding-top: 50px;
+  margin-right: 100px;
+}
