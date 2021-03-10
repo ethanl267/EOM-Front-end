@@ -18,11 +18,13 @@ html {
   top: 0;
   width: 100vw;
   height: 7vw;
+  z-index: 1000;
 }
 
 .nav-links {
   display: flex;
   list-style-type: none;
+  transition: all 0.3s linear;
 }
 
 .nav-link a {
@@ -36,17 +38,24 @@ html {
   color: #2a9d8f;
 }
 
-.hamburger {
+.MENU {
   display: none;
 }
 
 @media screen and (max-width: 535px) {
-  .hamburger {
+  .MENU {
     display: block;
   }
 
   .nav-links {
-    width: 0;
+    width: 0px;
     overflow: hidden;
+    position: fixed;
+    top: 40px;
+    background: black;
+    left: 0;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
   }
 }

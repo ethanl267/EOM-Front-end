@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/1e1c7baf97.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1e1c7baf97.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/styles/contact.css" />
     <link rel="stylesheet" href="./assets/styles/navigation.css" />
 
@@ -24,80 +27,70 @@
         <li class="nav-link"><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
-    <button class="hamburger">Hamburger</button>
-    <section id="contact">
-  
-        <h1 class="section-header">CONTACT</h1>
-        
-        <div class="contact-wrapper">
-          
-          
-          <form id="contact-form" class="form-horizontal" role="form">
-             
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-              </div>
-            </div>
-      
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-              </div>
-            </div>
-      
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-            
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-              <div class="button">
-                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-              </div>
-            
-            </button>
-            
-          </form>
-          
-            
-          
-            <div class="direct-contact-container">
-      
-              <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
-                
-                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-067 007-7258" title="Give me a call">(067) 007-7258</a></span></i></li>
-                
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">ethanlesch8@gmail.com</a></span></i></li>
-                
-              </ul>
-      
-              <hr>
-              <ul class="social-media-list">
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                </li>
-              </ul>
-              <hr>
-      
-              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-      
-            </div>
-          
-        </div>
-        
-      </section>  
-        
-        
 
-        </div>
+    <div class="container">
+      <form id="contact" action="https://formspree.io/f/mgepgarq" method="POST">
+        <h3>Quick Contact</h3>
+        <h4>Contact me if you wanna ask any questions!</h4>
+        <fieldset>
+          <input
+            placeholder="Your name"
+            type="text"
+            tabindex="1"
+            name="name"
+            required
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Email Address"
+            type="email"
+            tabindex="2"
+            name="_replyto"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Phone Number"
+            type="tel"
+            name="number"
+            tabindex="3"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Type your Message Here...."
+            tabindex="5"
+            name="message"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
+      <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/ethan-lesch-7212a61b0/"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/ethanl267">
+          <i class="fa fa-github"> </i
+        ></a>
+
+        <a href="https://www.instagram.com/ethanlesch.cpt/"
+          ><i class="fa fa-instagram"></i
+        ></a>
       </div>
+    </div>
   </body>
 </html>

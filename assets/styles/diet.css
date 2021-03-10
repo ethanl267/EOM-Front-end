@@ -19,3 +19,6 @@ img {
   padding-top: 50px;
   margin-right: 100px;
 }
+body {
+  background-color: rgba(42, 157, 143, 0.6);
+}

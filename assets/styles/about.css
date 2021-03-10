@@ -19,3 +19,41 @@ img {
 body {
   background-image: url(../images/289-2895659_gym-workout-hd-wallpapers-best-workout-music-mix.jpg);
 }
+
+@media screen and (max-width: 610px) {
+  .container img {
+    width: 253px;
+    height: 158px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  p.text1 {
+    font-size: 25px;
+  }
+
+  .navbar {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container img {
+    width: 199px;
+    height: 125px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  p.text1 {
+    font-size: 15px;
+  }
+
+  .navbar {
+    position: static;
+  }
+}
