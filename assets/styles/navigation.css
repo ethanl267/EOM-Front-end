@@ -45,10 +45,12 @@ html {
 @media screen and (max-width: 535px) {
   .MENU {
     display: block;
+    margin-top: 20px;
   }
 
   .nav-links {
     width: 0px;
+    display: flex;
     overflow: hidden;
     position: fixed;
     top: 30px;
@@ -57,5 +59,22 @@ html {
     justify-content: center;
     height: 40px;
     align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(42, 157, 143, 0.6);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 7vw;
+    z-index: 1000;
+  }
+
+  .navbar img {
+    margin-left: 28px;
   }
 }
