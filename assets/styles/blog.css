@@ -52,8 +52,9 @@
 }
 
 h4 {
-  font-size: xx-large;
+  /* font-size: xx-large; */
   color: white;
+  text-align: center;
 }
 
 body {
